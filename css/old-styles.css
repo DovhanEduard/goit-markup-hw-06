@@ -135,7 +135,6 @@ body {
 
 /* ============= Hero section styles ============= */
 .hero-section {
-  
   margin-right: auto;
 
   margin-left: auto;
@@ -244,7 +243,6 @@ body {
 
 .team-list-item {
   width: calc((100% - 72px) / 4);
-  
 }
 
 .team-list-container {
@@ -283,7 +281,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  
 }
 
 .portfolio-list-item {
