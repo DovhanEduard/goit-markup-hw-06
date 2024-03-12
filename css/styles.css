@@ -570,8 +570,7 @@ body {
 .portfolio-list-item:hover .portfolio-list-overlay-text {
   transform: translateY(0%);
 }
-.portfolio-list-item-photo {
-}
+
 .portfolio-list-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -630,8 +629,7 @@ body {
   padding-bottom: 96px;
   background-color: #2e2f42;
 }
-.footer-container {
-}
+
 .footer-logo {
   display: block;
   margin-bottom: 17.5px;
@@ -668,8 +666,7 @@ body {
 /* ============= /Footer section styles ============= */
 
 /* ============= Form footer styles ============= */
-.form-footer {
-}
+
 .form-footer-text {
   margin-bottom: 16px;
   color: #ffffff;
@@ -1037,7 +1034,6 @@ body {
     padding: 0;
   }
 }
-
 
 /* ============= /Modal form styles ============= */
 
