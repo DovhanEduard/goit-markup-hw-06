@@ -1051,6 +1051,12 @@ body {
 
 /* ============= Mobile menu styles ============= */
 @media screen and (max-width: 767px) {
+  .mob-men-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -1096,7 +1102,6 @@ body {
     fill: #ffffff;
   }
   .mobile-menu-list {
-    margin-bottom: 100%;
   }
   .mobile-menu-list-item:not(:last-child) {
     margin-bottom: 40px;
