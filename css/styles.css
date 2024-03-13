@@ -113,6 +113,8 @@ body {
 
 /* ============= Page Header styles ============= */
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -122,8 +124,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .logo {
@@ -156,6 +156,9 @@ body {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding: 0;
+  }
   .header-container {
     padding: 0;
   }
@@ -215,8 +218,8 @@ body {
   }
 
   .contacts-list-link {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.7;
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -235,6 +238,10 @@ body {
   .contacts-list {
     display: flex;
     gap: 40px;
+  }
+  .contacts-list-link {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 /* ============= /Page Header styles ============= */
@@ -407,7 +414,7 @@ body {
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .benefits-list-item {
@@ -638,13 +645,16 @@ body {
 .accent-color-footer {
   color: #f4f4fd;
 }
-
+.footer-content-container {
+  margin-bottom: 72px;
+}
 .footer-text {
   width: 288px;
-  margin-bottom: 72px;
   color: #f4f4fd;
 }
-
+.social-media-footer-container {
+  margin-bottom: 72px;
+}
 .social-media-footer-text {
   margin-bottom: 16px;
   color: #ffffff;
@@ -656,7 +666,6 @@ body {
 }
 .social-media-list-footer {
   gap: 16px;
-  margin-bottom: 72px;
 }
 .social-media-footer-color:hover,
 .social-media-footer-color:focus {
@@ -733,12 +742,13 @@ body {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
+    width: 584px;
   }
-  .footer-content-container {
-    margin-left: 108px;
+  .footer-logo {
+    text-align: left;
   }
-  .form-footer {
-    margin-left: 108px;
+  .social-media-footer-text {
+    text-align: left;
   }
   .subscribe-form {
     display: flex;
@@ -758,12 +768,12 @@ body {
 
 /* Desk */
 @media screen and (min-width: 1158px) {
+  .footer-container {
+    width: 100%;
+  }
   .page-footer {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-  .footer-content-container {
-    margin: 0;
   }
   .form-footer {
     flex-wrap: nowrap;
@@ -774,12 +784,14 @@ body {
   }
   .footer-content-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .footer-text {
     width: 264px;
   }
   .social-media-footer-container {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 /* ============= /Form footer styles ============= */
@@ -1046,26 +1058,20 @@ body {
     z-index: 999;
     width: 100%;
     height: 100%;
+    padding: 72px 24px 40px 16px;
     background: #ffffff;
     opacity: 0;
     visibility: hidden;
   }
-
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
   }
 
-  .mobile-menu-container {
-    position: relative;
-    padding-top: 72px;
-    padding-bottom: 40px;
-  }
-
   .mobile-menu-close-btn {
     position: absolute;
-    top: 11px;
-    right: 8px;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     padding: 0;
@@ -1089,11 +1095,12 @@ body {
   .mobile-menu-close-btn:focus .mobile-menu-close-icon {
     fill: #ffffff;
   }
-
   .mobile-menu-list {
-    margin-bottom: 168px;
+    margin-bottom: 100%;
   }
-
+  .mobile-menu-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
   .mobile-menu-link {
     color: #2e2f42;
     font-weight: 700;
@@ -1111,7 +1118,9 @@ body {
   .mobile-menu-contacts-list {
     margin-bottom: 48px;
   }
-
+  .mobile-menu-contacts-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
   .mobile-menu-contacts-list-link {
     color: #434455;
     font-weight: 500;
@@ -1147,6 +1156,10 @@ body {
   .mobile-menu-media-list-link:hover,
   .mobile-menu-media-list-link:focus {
     background-color: #404bbf;
+  }
+
+  .mobile-menu-accent-color {
+    color: #4d5ae5;
   }
 }
 @media screen and (min-width: 768px) {
